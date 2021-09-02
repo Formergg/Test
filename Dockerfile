@@ -1,17 +1,19 @@
-# Use the official PHP 7.3 image.
-# https://hub.docker.com/_/php
-FROM php:7.3-apache
+# https://hub.docker.com/_/node
+FROM node:12-slim
+
+# Create and change to the app directory.
+WORKDIR /usr/src/app
+
+# Copy application dependency manifests to the container image.
+# A wildcard is used to ensure both package.json AND package-lock.json are copied.
+# Copying this separately prevents re-running npm install on every code change.
+COPY package*.json ./
+
+# Install production dependencies.
+RUN npm install --only=production
 
 # Copy local code to the container image.
-COPY index.php /var/www/html/
+COPY . ./
 
-# Use the PORT environment variable in Apache configuration files.
-#RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
-
-# Configure PHP for development.
-# Switch to the production php.ini for production operations.
-# RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-# https://hub.docker.com/_/php#configuration
-RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
-
-CMD ["apachectl", "-DFOREGROUND"]
+# Run the web service on container startup.
+CMD [ "npm", "start" ]
