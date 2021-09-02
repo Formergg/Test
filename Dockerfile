@@ -1,17 +1,15 @@
-# Use the official PHP 7.3 image.
-# https://hub.docker.com/_/php
-FROM php:7.3-apache
+# Use the official maven/Java 8 image to create a build artifact.
+# https://hub.docker.com/_/maven
+FROM maven:3.5-jdk-8-alpine as builder
 
 # Copy local code to the container image.
-COPY index.php /var/www/html/
+WORKDIR /app
+COPY pom.xml .
+COPY src ./src
 
-# Use the PORT environment variable in Apache configuration files.
-#RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
+# Build a release artifact.
+RUN mvn package -DskipTests
 
-# Configure PHP for development.
-# Switch to the production php.ini for production operations.
-# RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-# https://hub.docker.com/_/php#configuration
-RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
+# Run the web service on container startup.
+CMD ["java","-Djava.security.egd=file:/dev/./urandom","-Dserver.port=80","-jar","/app/target/helloworld-0.0.1-SNAPSHOT.jar"]
 
-CMD ["apachectl", "-DFOREGROUND"]
