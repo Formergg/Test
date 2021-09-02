@@ -1,15 +1,15 @@
-# Use the official maven/Java 8 image to create a build artifact.
-# https://hub.docker.com/_/maven
-FROM maven:3.5-jdk-8-alpine as builder
+FROM maven:3.8.1-jdk-8-slim
+ENV APPHOME=/var/act-app
+ENV CODEHOME=/var/act-code
+RUN mkdir -p $APPHOME
+RUN mkdir -p $CODEHOME
+WORKDIR $APPHOME
+COPY ./ $CODEHOME
+RUN cd $CODEHOME && mvn clean package
+RUN cp $CODEHOME/target/dist/*.tar.gz $APPHOME
+RUN tar -xf $APPHOME/*.tar.gz
 
-# Copy local code to the container image.
-WORKDIR /app
-COPY pom.xml .
-COPY src ./src
+EXPOSE 5460/tcp
+EXPOSE 5461/tcp
 
-# Build a release artifact.
-RUN mvn package -DskipTests
-
-# Run the web service on container startup.
-CMD ["java","-Djava.security.egd=file:/dev/./urandom","-Dserver.port=80","-jar","/app/target/helloworld-0.0.1-SNAPSHOT.jar"]
-
+CMD $APPHOME/run

@@ -1,0 +1,277 @@
+2021-07-23_14:56:36.207 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_14:56:36.212 [main] INFO  act.app.App - App starting ....
+2021-07-23_14:56:36.322 [main] WARN  act.conf.AppConfig - ActFramework support compiling source code up to Java 8 only
+2021-07-23_14:56:36.360 [main] INFO  act.Act - Default port allocated for testing: 58532
+2021-07-23_14:56:36.382 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_14:56:36.977 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 58532
+2021-07-23_14:56:36.991 [main] INFO  act.Act - network client hooked on port: 58532
+2021-07-23_14:56:36.991 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 58534
+2021-07-23_14:56:36.992 [main] INFO  act.Act - network client hooked on port: 58534
+2021-07-23_14:56:36.992 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 58535
+2021-07-23_14:56:36.993 [main] INFO  act.Act - network client hooked on port: 58535
+2021-07-23_14:56:36.993 [main] INFO  act.Act - CLI server started on port: 58533
+2021-07-23_14:56:36.994 [main] INFO  act.Act - app is ready in 1543ms at: http://192.168.255.10:58532
+
+
+2021-07-23_14:56:39.755 [Thread-8] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_14:56:39.764 [Thread-8] INFO  act.Act - All components shutdown, bye!
+2021-07-23_14:58:10.832 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_14:58:10.839 [main] INFO  act.app.App - App starting ....
+2021-07-23_14:58:11.045 [main] WARN  act.conf.AppConfig - ActFramework support compiling source code up to Java 8 only
+2021-07-23_14:58:11.109 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_14:58:11.705 [main] INFO  act.Act - network client hooked on port: 5460
+2021-07-23_14:58:11.705 [main] INFO  act.Act - network client hooked on port: 5462
+2021-07-23_14:58:11.706 [main] INFO  act.Act - network client hooked on port: 5463
+2021-07-23_14:58:11.706 [main] INFO  act.Act - CLI server started on port: 5461
+2021-07-23_14:58:11.707 [main] INFO  act.Act - app is ready in 1335ms at: http://192.168.255.10:5460
+
+
+2021-07-23_14:58:11.760 [jobs-thread-1] WARN  act.job.JobExceptionListenerManager - Job exception encountered on running job[post_di_load_init]
+java.lang.reflect.InaccessibleObjectException: Unable to make field int java.awt.Color.value accessible: module java.desktop does not "opens java.awt" to unnamed module @1d1cbd0f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:177)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:171)
+	at org.osgl.Lang.addFieldsToList(Lang.java:8056)
+	at org.osgl.Lang.fieldsOf(Lang.java:7986)
+	at org.osgl.Lang.fieldsOf(Lang.java:7938)
+	at org.osgl.Lang.fieldOf(Lang.java:7876)
+	at org.osgl.Lang.fieldOf(Lang.java:7858)
+	at act.conf.AppConfig.captchaBgColor(AppConfig.java:461)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.osgl.Lang.invokeVirtual(Lang.java:8221)
+	at act.conf.AppConfig.preloadConfigurations(AppConfig.java:222)
+	at act.app.App$4.run(App.java:824)
+	at act.job.JobManager$ContextualJob$1.apply(JobManager.java:543)
+	at act.job.Job.doJob(Job.java:408)
+	at act.job.Job.run(Job.java:337)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-07-23_14:58:43.246 [Thread-5] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_14:58:43.257 [Thread-5] INFO  act.Act - All components shutdown, bye!
+2021-07-23_15:09:24.327 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_15:09:24.333 [main] INFO  act.app.App - App starting ....
+2021-07-23_15:09:24.502 [main] WARN  act.conf.AppConfig - ActFramework support compiling source code up to Java 8 only
+2021-07-23_15:09:24.552 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_15:09:25.107 [main] INFO  act.Act - network client hooked on port: 5460
+2021-07-23_15:09:25.108 [main] INFO  act.Act - network client hooked on port: 5462
+2021-07-23_15:09:25.109 [main] INFO  act.Act - network client hooked on port: 5463
+2021-07-23_15:09:25.109 [main] INFO  act.Act - CLI server started on port: 5461
+2021-07-23_15:09:25.110 [main] INFO  act.Act - app is ready in 1234ms at: http://192.168.255.10:5460
+
+
+2021-07-23_15:09:25.176 [jobs-thread-1] WARN  act.job.JobExceptionListenerManager - Job exception encountered on running job[post_di_load_init]
+java.lang.reflect.InaccessibleObjectException: Unable to make field int java.awt.Color.value accessible: module java.desktop does not "opens java.awt" to unnamed module @1d1cbd0f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:177)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:171)
+	at org.osgl.Lang.addFieldsToList(Lang.java:8056)
+	at org.osgl.Lang.fieldsOf(Lang.java:7986)
+	at org.osgl.Lang.fieldsOf(Lang.java:7938)
+	at org.osgl.Lang.fieldOf(Lang.java:7876)
+	at org.osgl.Lang.fieldOf(Lang.java:7858)
+	at act.conf.AppConfig.captchaBgColor(AppConfig.java:461)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.osgl.Lang.invokeVirtual(Lang.java:8221)
+	at act.conf.AppConfig.preloadConfigurations(AppConfig.java:222)
+	at act.app.App$4.run(App.java:824)
+	at act.job.JobManager$ContextualJob$1.apply(JobManager.java:543)
+	at act.job.Job.doJob(Job.java:408)
+	at act.job.Job.run(Job.java:337)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-07-23_15:09:32.255 [Thread-5] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_15:09:32.264 [Thread-5] INFO  act.Act - All components shutdown, bye!
+2021-07-23_15:15:23.890 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_15:15:23.896 [main] INFO  act.app.App - App starting ....
+2021-07-23_15:15:24.064 [main] WARN  act.conf.AppConfig - ActFramework support compiling source code up to Java 8 only
+2021-07-23_15:15:24.106 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_15:15:24.688 [main] INFO  act.Act - network client hooked on port: 5460
+2021-07-23_15:15:24.689 [main] INFO  act.Act - network client hooked on port: 5462
+2021-07-23_15:15:24.690 [main] INFO  act.Act - network client hooked on port: 5463
+2021-07-23_15:15:24.690 [main] INFO  act.Act - CLI server started on port: 5461
+2021-07-23_15:15:24.691 [main] INFO  act.Act - app is ready in 1235ms at: http://192.168.255.10:5460
+
+
+2021-07-23_15:15:24.761 [jobs-thread-1] WARN  act.job.JobExceptionListenerManager - Job exception encountered on running job[post_di_load_init]
+java.lang.reflect.InaccessibleObjectException: Unable to make field int java.awt.Color.value accessible: module java.desktop does not "opens java.awt" to unnamed module @1d1cbd0f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:177)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:171)
+	at org.osgl.Lang.addFieldsToList(Lang.java:8056)
+	at org.osgl.Lang.fieldsOf(Lang.java:7986)
+	at org.osgl.Lang.fieldsOf(Lang.java:7938)
+	at org.osgl.Lang.fieldOf(Lang.java:7876)
+	at org.osgl.Lang.fieldOf(Lang.java:7858)
+	at act.conf.AppConfig.captchaBgColor(AppConfig.java:461)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.osgl.Lang.invokeVirtual(Lang.java:8221)
+	at act.conf.AppConfig.preloadConfigurations(AppConfig.java:222)
+	at act.app.App$4.run(App.java:824)
+	at act.job.JobManager$ContextualJob$1.apply(JobManager.java:543)
+	at act.job.Job.doJob(Job.java:408)
+	at act.job.Job.run(Job.java:337)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-07-23_15:15:35.610 [Thread-5] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_15:15:35.619 [Thread-5] INFO  act.Act - All components shutdown, bye!
+2021-07-23_15:16:01.272 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_15:16:01.282 [main] INFO  act.app.App - App starting ....
+2021-07-23_15:16:01.487 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_15:16:02.256 [main] INFO  act.Act - network client hooked on port: 5460
+2021-07-23_15:16:02.257 [main] INFO  act.Act - network client hooked on port: 5462
+2021-07-23_15:16:02.258 [main] INFO  act.Act - network client hooked on port: 5463
+2021-07-23_15:16:02.258 [main] INFO  act.Act - CLI server started on port: 5461
+2021-07-23_15:16:02.259 [main] INFO  act.Act - app is ready in 3499ms at: http://192.168.255.10:5460
+
+
+2021-07-23_15:16:03.091 [jobs-thread-1] INFO  act.apidoc.ApiManager - start compiling API book
+2021-07-23_15:16:03.306 [jobs-thread-1] INFO  act.apidoc.ApiManager - API book compiled
+2021-07-23_15:16:26.614 [Thread-9] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_15:16:26.628 [Thread-9] INFO  act.Act - All components shutdown, bye!
+2021-07-23_15:22:12.114 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_15:22:12.125 [main] INFO  act.app.App - App starting ....
+2021-07-23_15:22:12.406 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_15:22:13.076 [main] INFO  act.Act - network client hooked on port: 5460
+2021-07-23_15:22:13.077 [main] INFO  act.Act - network client hooked on port: 5462
+2021-07-23_15:22:13.078 [main] INFO  act.Act - network client hooked on port: 5463
+2021-07-23_15:22:13.078 [main] INFO  act.Act - CLI server started on port: 5461
+2021-07-23_15:22:13.079 [main] INFO  act.Act - app is ready in 1649ms at: http://192.168.255.10:5460
+
+
+2021-07-23_15:22:13.636 [jobs-thread-1] INFO  act.apidoc.ApiManager - start compiling API book
+2021-07-23_15:22:13.778 [jobs-thread-1] INFO  act.apidoc.ApiManager - API book compiled
+2021-07-23_15:22:42.073 [Thread-9] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_15:22:42.088 [Thread-9] INFO  act.Act - All components shutdown, bye!
+2021-07-23_15:34:27.007 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_15:34:27.010 [main] INFO  act.app.App - App starting ....
+2021-07-23_15:34:27.111 [main] WARN  act.conf.AppConfig - ActFramework support compiling source code up to Java 8 only
+2021-07-23_15:34:27.145 [main] INFO  act.Act - Default port allocated for testing: 49299
+2021-07-23_15:34:27.158 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_15:34:27.694 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 49299
+2021-07-23_15:34:27.704 [main] INFO  act.Act - network client hooked on port: 49299
+2021-07-23_15:34:27.704 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 49301
+2021-07-23_15:34:27.705 [main] INFO  act.Act - network client hooked on port: 49301
+2021-07-23_15:34:27.705 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 49302
+2021-07-23_15:34:27.705 [main] INFO  act.Act - network client hooked on port: 49302
+2021-07-23_15:34:27.706 [main] INFO  act.Act - CLI server started on port: 49300
+2021-07-23_15:34:27.707 [main] INFO  act.Act - app is ready in 1430ms at: http://192.168.255.10:49299
+
+
+2021-07-23_15:34:27.763 [jobs-thread-1] WARN  act.job.JobExceptionListenerManager - Job exception encountered on running job[post_di_load_init]
+java.lang.reflect.InaccessibleObjectException: Unable to make field int java.awt.Color.value accessible: module java.desktop does not "opens java.awt" to unnamed module @5bb4f7d1
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:177)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:171)
+	at org.osgl.Lang.addFieldsToList(Lang.java:8056)
+	at org.osgl.Lang.fieldsOf(Lang.java:7986)
+	at org.osgl.Lang.fieldsOf(Lang.java:7938)
+	at org.osgl.Lang.fieldOf(Lang.java:7876)
+	at org.osgl.Lang.fieldOf(Lang.java:7858)
+	at act.conf.AppConfig.captchaBgColor(AppConfig.java:461)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.osgl.Lang.invokeVirtual(Lang.java:8221)
+	at act.conf.AppConfig.preloadConfigurations(AppConfig.java:222)
+	at act.app.App$4.run(App.java:824)
+	at act.job.JobManager$ContextualJob$1.apply(JobManager.java:543)
+	at act.job.Job.doJob(Job.java:408)
+	at act.job.Job.run(Job.java:337)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2021-07-23_15:37:19.556 [Thread-5] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_15:37:19.577 [Thread-5] INFO  act.Act - All components shutdown, bye!
+2021-07-23_15:37:38.128 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_15:37:38.133 [main] INFO  act.app.App - App starting ....
+2021-07-23_15:37:38.266 [main] INFO  act.Act - Default port allocated for testing: 50481
+2021-07-23_15:37:38.285 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_15:37:38.840 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 50481
+2021-07-23_15:37:38.873 [main] INFO  act.Act - network client hooked on port: 50481
+2021-07-23_15:37:38.873 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 50483
+2021-07-23_15:37:38.873 [main] INFO  act.Act - network client hooked on port: 50483
+2021-07-23_15:37:38.874 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 50484
+2021-07-23_15:37:38.874 [main] INFO  act.Act - network client hooked on port: 50484
+2021-07-23_15:37:38.874 [main] INFO  act.Act - CLI server started on port: 50482
+2021-07-23_15:37:38.875 [main] INFO  act.Act - app is ready in 1604ms at: http://192.168.255.10:50481
+
+
+2021-07-23_15:37:39.696 [Thread-11] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_15:37:39.703 [Thread-11] INFO  act.Act - All components shutdown, bye!
+2021-07-23_16:05:00.729 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_16:05:00.736 [main] INFO  act.app.App - App starting ....
+2021-07-23_16:05:00.970 [main] INFO  act.Act - Default port allocated for testing: 56787
+2021-07-23_16:05:01.005 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_16:05:01.687 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 56787
+2021-07-23_16:05:01.715 [main] INFO  act.Act - network client hooked on port: 56787
+2021-07-23_16:05:01.716 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 56789
+2021-07-23_16:05:01.716 [main] INFO  act.Act - network client hooked on port: 56789
+2021-07-23_16:05:01.716 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 56790
+2021-07-23_16:05:01.717 [main] INFO  act.Act - network client hooked on port: 56790
+2021-07-23_16:05:01.717 [main] INFO  act.Act - CLI server started on port: 56788
+2021-07-23_16:05:01.718 [main] INFO  act.Act - app is ready in 1432ms at: http://192.168.255.10:56787
+
+
+2021-07-23_16:05:02.626 [Thread-11] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_16:05:02.634 [Thread-11] INFO  act.Act - All components shutdown, bye!
+2021-07-23_17:57:33.167 [main] INFO  act.Act - loading application(s) ...
+2021-07-23_17:57:33.175 [main] INFO  act.app.App - App starting ....
+2021-07-23_17:57:33.440 [main] INFO  act.Act - Default port allocated for testing: 56639
+2021-07-23_17:57:33.477 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-07-23_17:57:34.095 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 56641
+2021-07-23_17:57:34.122 [main] INFO  act.Act - network client hooked on port: 56641
+2021-07-23_17:57:34.122 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 56642
+2021-07-23_17:57:34.123 [main] INFO  act.Act - network client hooked on port: 56642
+2021-07-23_17:57:34.123 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 56639
+2021-07-23_17:57:34.123 [main] INFO  act.Act - network client hooked on port: 56639
+2021-07-23_17:57:34.124 [main] INFO  act.Act - CLI server started on port: 56640
+2021-07-23_17:57:34.125 [main] INFO  act.Act - app is ready in 1446ms at: http://192.168.255.10:56639
+
+
+2021-07-23_17:57:35.135 [Thread-11] INFO  act.app.App - Shutting down app [helloworld]....
+2021-07-23_17:57:35.142 [Thread-11] INFO  act.Act - All components shutdown, bye!
+2021-08-02_18:01:21.181 [main] INFO  act.Act - loading application(s) ...
+2021-08-02_18:01:21.193 [main] INFO  act.app.App - App starting ....
+2021-08-02_18:01:21.474 [main] INFO  act.Act - Default port allocated for testing: 57735
+2021-08-02_18:01:21.507 [main] INFO  act.app.DbServiceManager - DB service not initialized: No DB plugin found
+2021-08-02_18:01:22.129 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 57735
+2021-08-02_18:01:22.154 [main] INFO  act.Act - network client hooked on port: 57735
+2021-08-02_18:01:22.154 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 57737
+2021-08-02_18:01:22.155 [main] INFO  act.Act - network client hooked on port: 57737
+2021-08-02_18:01:22.155 [main] INFO  act.xio.undertow.UndertowNetwork - Try clearing random server socket: 57738
+2021-08-02_18:01:22.155 [main] INFO  act.Act - network client hooked on port: 57738
+2021-08-02_18:01:22.155 [main] INFO  act.Act - CLI server started on port: 57736
+2021-08-02_18:01:22.156 [main] INFO  act.Act - app is ready in 1470ms at: http://192.168.255.10:57735
+
+
+2021-08-02_18:01:23.477 [Thread-11] INFO  act.app.App - Shutting down app [helloworld]....
+2021-08-02_18:01:23.486 [Thread-11] INFO  act.Act - All components shutdown, bye!
