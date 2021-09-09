@@ -1,6 +1,6 @@
 {
 	// Listening port
-	"containerPort": 61001,
+	"containerPort": 9100,
 	// Dockerfile Route
 	"dockerfilePath": "Dockerfile",
 	// Build directory
