@@ -1,0 +1,26 @@
+{
+	// Listening port
+	"containerPort": 8080,
+	// Dockerfile Route
+	"dockerfilePath": "Dockerfile",
+	// Build directory
+	"buildDir": "",
+	// Minimum number of instances
+	"minNum": 0,
+	// Maximum number of instances
+	"maxNum": 50,
+	// cpu Nuclear number
+	"cpu": 0.25,
+	// Memory size, in G
+	"mem": 0.5,
+	// Type of Expansion and Reduction Capacity
+	"policyType": "cpu",
+	// Expansion Volume Index Threshold
+	"policyThreshold": 60,
+	// Environment variable
+	"envParams": {},
+	// Log collection path
+	"customLogs": "stdout",
+	// Start-Up Detection Delay
+	"initialDelaySeconds": 2
+}
